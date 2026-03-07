@@ -1,0 +1,13 @@
+numpy
+pandas
+networkx
+rdflib
+rapidfuzz
+fast-bleu
+spacy
+negspacy  # optional: for ClinicKGNegationResolution English (en_core_web_sm)
+neg-detect  # optional: for ClinicKGNegationResolution Chinese (BERT-based)
+jieba  # for ClinicKGNegationResolution Chinese tokenization
+nltk
+rouge-score
+jieba

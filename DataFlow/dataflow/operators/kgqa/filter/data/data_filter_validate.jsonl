@@ -1,0 +1,1 @@
+{"reversed_sparql":"SELECT ?entity WHERE { wd:Q0007 wdt:P0000 ?middle . ?middle wdt:P0001 ?entity . }","llm_answer":["Q0010"],"path_info":{"path_nodes_qid":["Q0007","Q0008","Q0010"],"path_relations_pid":["P0000","P0001"]},"sparql_pattern":{"sparql_pattern":"SELECT ?entity WHERE { <entity1> <relation1> ?entity . }"}}

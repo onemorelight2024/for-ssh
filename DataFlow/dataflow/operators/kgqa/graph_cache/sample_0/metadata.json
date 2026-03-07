@@ -1,0 +1,28 @@
+{
+  "num_nodes": 11,
+  "num_edges": 10,
+  "num_relations": 8,
+  "node_labels": [
+    "August 12 2020",
+    "Berlin",
+    "Clean Earth",
+    "Henry",
+    "Lucy",
+    "Maple Leaves",
+    "Maria Rodriguez",
+    "Paris",
+    "Polar Lights",
+    "Rome",
+    "University Toronto"
+  ],
+  "relation_labels": [
+    "forms",
+    "is_member_of",
+    "is_released_on",
+    "is_trained_by",
+    "joins",
+    "performs_in",
+    "releases",
+    "studied_at"
+  ]
+}
