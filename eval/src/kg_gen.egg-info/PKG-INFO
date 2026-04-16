@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: kg-gen
+Version: 0.4.0
+Summary: Extract a knowledge graph using LLMs from any text or messages array
+Author-email: Belinda Mo <justanexperimentpark@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/stair-lab/kg-gen
+Project-URL: Issues, https://github.com/stair-lab/kg-gen/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: <4.0,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: nltk
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pre-commit>=4.3.0
+Requires-Dist: ty>=0.0.1a21
+Requires-Dist: dspy>=2.6.27
+Requires-Dist: openai>=1.108.1
+Requires-Dist: pyvis>=0.3.2
+Requires-Dist: sentence-transformers>=5.1.0
+Requires-Dist: tqdm>=4.67.1
+Requires-Dist: datasets>=4.1.1
+Requires-Dist: semhash>=0.3.2
+Requires-Dist: inflect>=7.5.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: scipy>=1.10.0
+Requires-Dist: scikit-learn>=1.7.2
+Requires-Dist: rank-bm25>=0.2.2
+Requires-Dist: networkx>=3.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: dspy-ai>=2.6.27
+Requires-Dist: pathlib2>=2.3.7
+Requires-Dist: typer>=0.17.4
+Requires-Dist: ruff>=0.14.2
+Requires-Dist: neo4j>=5.0.0
