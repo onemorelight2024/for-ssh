@@ -6,12 +6,12 @@ This folder collects the final result files that are ready to upload.
 
 - `autoschema/`
   - 6 final AutoSchemaKG result files:
-  - `l2_autoschemakg_deepseek_triple.json`
-  - `l2_autoschemakg_deepseek_with_kg.json`
-  - `l2_autoschemakg_gpt35_triple.json`
-  - `l2_autoschemakg_gpt35_with_kg.json`
-  - `l2_autoschemakg_gpt4omini_triple.json`
-  - `l2_autoschemakg_gpt4omini_with_kg.json`
+  - `l2_autoschemakg_deepseek_stage1_with_kg.json`
+  - `l2_autoschemakg_deepseek_stage2_with_kg.json`
+  - `l2_autoschemakg_gpt35_stage1_with_kg.json`
+  - `l2_autoschemakg_gpt35_stage2_with_kg.json`
+  - `l2_autoschemakg_gpt4omini_stage1_with_kg.json`
+  - `l2_autoschemakg_gpt4omini_stage2_with_kg.json`
 - `all_llm/`
   - `all_llm_v3_with_kg.json`
 - `cc/`
@@ -23,6 +23,16 @@ This folder collects the final result files that are ready to upload.
   - `l2_wikontic_gpt4omini_onto_with_kg.json`
 - `_intermediate/`
   - Raw or intermediate files moved out of the final result set.
+
+### AutoSchemaKG Stages
+
+- `stage1_with_kg`
+  - Result saved after `kg.run_extraction()` and `json_saver1(cfg)` in [run.py](/home/liuxuem/dataflow-benchmark/AutoSchemaKG/run.py).
+  - This is the pre-concept-merging ablation.
+- `stage2_with_kg`
+  - Result reconstructed from the stage2 concept merge artifacts produced after `generate_concept_csv_temp()` and `create_concept_csv()`.
+  - This is the post-concept-merging ablation.
+- Older `*_triple.json` and earlier `*_with_kg.json` files were the wrong packaging for the final bundle and were moved to `_intermediate/autoschema_old_wrong/`.
 
 ### Wikontic Status
 
@@ -42,3 +52,4 @@ This folder collects the final result files that are ready to upload.
   - 1 all-LLM file
   - 1 CC file
   - 3 Wikontic files
+- All 11 final JSON files currently load successfully and each contains 2000 items.
