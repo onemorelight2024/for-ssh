@@ -1,13 +1,40 @@
 ## Wikontic Status
 
-Wikontic outputs are not currently organized as final JSON result files under the repo.
-The main outputs are being written into MongoDB databases.
+Wikontic outputs were exported from MongoDB databases into JSON result bundles.
 
-Known status at packaging time:
+Raw exported files were moved to `../_intermediate/wikontic/`:
 
-- `gpt-4o-mini`: previously completed coverage was effectively `1999/2000` visible sample IDs, with one sample yielding empty extraction.
-- `gpt-3.5-turbo`: still running, so not packaged here as a final file result.
-- `deepseek-v3`: no file-exported final bundle was found here during packaging.
+- `l2_wikontic_gpt4omini_onto.json`
+  - Source database: `l2_triplets_gpt-4o-mini_onto`
+  - Unique sample IDs seen: 1999
+- `l2_wikontic_gpt35_onto.json`
+  - Source database: `l2_triplets_gpt-3_5-turbo_onto`
+  - Unique sample IDs seen: 1994
+- `l2_wikontic_deepseek_v3_onto.json`
+  - Source database: `l2_triplets_deepseek-v3_onto`
+  - Unique sample IDs seen: 1986
+- `wikontic_export_summary.json`
+  - Summary of exported database names, output files, document counts, and sample coverage.
+
+Eval-ready converted files:
+
+- `l2_wikontic_gpt4omini_onto_with_kg.json`
+  - 2000 source records
+  - Records with at least one final Wikontic relation: 1997
+- `l2_wikontic_gpt35_onto_with_kg.json`
+  - 2000 source records
+  - Records with at least one final Wikontic relation: 1989
+- `l2_wikontic_deepseek_v3_onto_with_kg.json`
+  - 2000 source records
+  - Records with at least one final Wikontic relation: 1980
+
+Each exported JSON contains these Mongo collections:
+
+- `triplets`
+- `initial_triplets`
+- `ontology_filtered_triplets`
+- `filtered_triplets`
+- `entity_aliases`
 
 Relevant configs:
 
